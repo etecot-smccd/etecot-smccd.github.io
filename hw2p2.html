@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 2 - Basic Operations, Part 2">
+<title>Homework 2</title>
+<script src="hw2p2.js" defer></script>
+</head>
+<body>
+
+<header>
+    <!-- Create a web page using HTML5 with the heading Homework 2 - Basic Operations, Part 2. -->
+    <h1>Homework 2 - Basic Operations, Part 2</h1>
+</header>
+
+<!-- Create a webpage with a form that will have:
+three input boxes for the user to type three integers (numbers)
+a button to process the data (numbers) typed by the user
+a button to clear the form
+a textarea to display the results of the process (or it can be a div or paragraph element below the form) -->
+<form id="numberForm">
+    <label for="num1">Integer 1:</label>
+    <input type="number" step=1 id="num1" name="num1"required>
+    <br>
+    <label for="num2">Integer 2:</label>
+    <input type="number" step=1 id="num2" name="num2" required>
+    <br>
+    <label for="num3">Integer 3:</label>
+    <input type="number" step=1 id="num3" name="num3" required>
+    <br>
+    <button type="button" id="btnProcess">Process</button>
+    <button type="reset">Clear</button>
+</form>
+<textarea id="output" rows="5" cols="50" readonly></textarea>
+
+<footer>
+    <!-- Remember to include a hyperlink to go back to the Homework 2 main web page -->
+    <!-- For each page that exhibits a part of HW2, there should be a way to go to other parts of HW2 or to the home page of HW2 - the user should not need to use the back button of the browser-->
+    <nav>
+        <ul>
+            <li><a href="hw2.html">Homework 2 - Basic Operations</a>
+                <ul>
+                    <li><a href="hw2p1.html">Part 1 - Script to generate a page with different inline styles</a></li>
+                    <li><em>Part 2 - Page with a form used to reduce 3 integers (this page)</em></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>
