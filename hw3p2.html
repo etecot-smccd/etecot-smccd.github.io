@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 3 - Functions, Part 2: Earnings Report">
+<title>Homework 3 - Part 2</title>
+<link rel="stylesheet" href="hw3.css">
+<script src="hw3p2.js" defer></script>
+</head>
+<body>
+<!-- Create a web page that might look similar to the layout shown in the image below.
+
+Your page does not need to contain the input box for the name of the sales person as shown in the image below.
+
+The results of total sold in dollars and the total money that will be received by the sale person should be right-justify (aligned to the right)
+
+Here is an image showing a possible display that is using tables, and form elements (labels, input boxes, buttons, etc.) and some tips:
+
+The boxes for seller's name, and Item 1, Item 2, Item 3, Item 4 will be the boxes that the user will type data - as mentioned before, you do not need to have the input box for the seller's name.
+-->
+
+<header>
+    <h1>Homework 3 - Part 2</h1>
+</header>
+
+<form id="earningsForm">
+    For each item, type the quantity sold by the seller
+    <p id="item1Row">
+    <label for="item1">Item 1:</label>&nbsp;
+    <input type="number" step=1 id="item1" name="item1" required>&nbsp;
+    <span class="errorMsg">must be a non-negative number</span>
+    </p>
+    <p id="item2Row">
+    <label for="item2">Item 2:</label>&nbsp;
+    <input type="number" step=1 id="item2" name="item2" required>&nbsp;
+    <span class="errorMsg">must be a non-negative number</span>
+    </p>
+    <p id="item3Row">
+    <label for="item3">Item 3:</label>&nbsp;
+    <input type="number" step=1 id="item3" name="item3" required>&nbsp;
+    <span class="errorMsg">must be a non-negative number</span>
+    </p>
+    <p id="item4Row">
+    <label for="item4">Item 4:</label>&nbsp;
+    <input type="number" step=1 id="item4" name="item4" required>&nbsp;
+    <span class="errorMsg">must be a non-negative number</span>
+    </p>
+    <button type="button" id="btnSubmit">Submit</button>
+    <br>
+    <button type="reset">Clear Form</button>
+    <table>
+        <tr>
+            <th>Item#</th>
+            <th>Price</th>
+            <th>Qty Sold</th>
+            <th>Total $</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>$20.99</td>
+            <td><input type="number" step=1 id="item1Qty" name="item1Qty" readonly></td>
+            <td><input type="text" class="total" id="item1Total" name="item1Total" readonly></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>$12.75</td>
+            <td><input type="number" step=1 id="item2Qty" name="item2Qty" readonly></td>
+            <td><input type="text" class="total" id="item2Total" name="item2Total" readonly></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>$9.95</td>
+            <td><input type="number" step=1 id="item3Qty" name="item3Qty" readonly></td>
+            <td><input type="text" class="total" id="item3Total" name="item3Total" readonly></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>$35.89</td>
+            <td><input type="number" step=1 id="item4Qty" name="item4Qty" readonly></td>
+            <td><input type="text" class="total" id="item4Total" name="item4Total" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Amount Sold</td>
+            <td><input type="text" class="total" id="totalAmountSold" name="totalAmountSold" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Weekly Earnings</td>
+            <td><input type="text" class="total" id="totalWeeklyEarnings" name="totalWeeklyEarnings" readonly></td>
+        </tr>
+    </table>
+</form>
+
+<footer>
+    <!-- make sure to include a hyperlink to the main Homework 3 page on each of those pages -->
+    <nav>
+        <ul>
+            <li><a href="hw3.html">Homework 3 - Functions</a>
+                <ul>
+                    <li><a href="hw3p1.html">Part 1 - Page to calculate a student's final average and letter grade</a></li>
+                    <li><em>Part 2 - Page to generate an earnings report (this page)</em></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>

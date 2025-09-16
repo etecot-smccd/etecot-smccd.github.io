@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 3 - Functions, Part 1: Student Grades">
+<title>Student Grades</title>
+<link rel="stylesheet" href="hw3.css">
+<script src="hw3p1.js" defer></script>
+</head>
+<body>
+
+<header>
+    <!-- Create a webpage that contains: the heading Student Grades, -->
+    <h1>Student Grades</h1>
+</header>
+
+<!-- a form with input boxes for Homework Average, Mid-Term Exam Score, Final Exam Score, and Participation - all those grades will be entered as integers
+you should have a button for submitting the data and a button to clear the form
+you should have a textarea (or div or paragraph element) to present final results and/or error message
+-->
+<form id="gradesForm">
+    <p>
+    <label for="homeworkAvg">Homework Average:</label>
+    <input type="number" step=1 id="homeworkAvg" name="homeworkAvg" required>
+    </p>
+    <p>
+    <label for="midTermScore">Mid-Term Exam Score:</label>
+    <input type="number" step=1 id="midTermScore" name="midTermScore" required>
+    </p>
+    <p>
+    <label for="finalExamScore">Final Exam Score:</label>
+    <input type="number" step=1 id="finalExamScore" name="finalExamScore" required>
+    </p>
+    <p>
+    <label for="participation">Participation:</label>
+    <input type="number" step=1 id="participation" name="participation" required>
+    </p>
+    <p>
+    <button type="button" id="btnCalculate">Calculate</button>
+    <button type="reset">Clear</button>
+    </p>
+    <textarea id="output" rows="5" cols="75" readonly></textarea>
+</form>
+
+<footer>
+    <!-- make sure to include a hyperlink to the main Homework 3 page on each of those pages -->
+    <nav>
+        <ul>
+            <li><a href="hw3.html">Homework 3 - Functions</a>
+                <ul>
+                    <li><em>Part 1 - Page to calculate a student's final average and letter grade (this page)</em></li>
+                    <li><a href="hw3p2.html">Part 2 - Page to generate an earnings report</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>

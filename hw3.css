@@ -1,0 +1,7 @@
+form p { display: table-row; }
+label { display: table-cell; }
+input { display: table-cell; }
+.total { text-align: right; }
+.errorMsg { display: none; }
+.error { color: red; }
+.error .errorMsg { display: inline; font-style: italic; }
