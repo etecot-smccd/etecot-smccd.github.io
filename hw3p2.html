@@ -50,44 +50,50 @@ The boxes for seller's name, and Item 1, Item 2, Item 3, Item 4 will be the boxe
     <br>
     <button type="reset">Clear Form</button>
     <table>
-        <tr>
-            <th>Item#</th>
-            <th>Price</th>
-            <th>Qty Sold</th>
-            <th>Total $</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>$20.99</td>
-            <td><input type="number" step=1 id="item1Qty" name="item1Qty" readonly></td>
-            <td><input type="text" class="total" id="item1Total" name="item1Total" readonly></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>$12.75</td>
-            <td><input type="number" step=1 id="item2Qty" name="item2Qty" readonly></td>
-            <td><input type="text" class="total" id="item2Total" name="item2Total" readonly></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>$9.95</td>
-            <td><input type="number" step=1 id="item3Qty" name="item3Qty" readonly></td>
-            <td><input type="text" class="total" id="item3Total" name="item3Total" readonly></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>$35.89</td>
-            <td><input type="number" step=1 id="item4Qty" name="item4Qty" readonly></td>
-            <td><input type="text" class="total" id="item4Total" name="item4Total" readonly></td>
-        </tr>
-        <tr>
-            <td colspan="3">Total Amount Sold</td>
-            <td><input type="text" class="total" id="totalAmountSold" name="totalAmountSold" readonly></td>
-        </tr>
-        <tr>
-            <td colspan="3">Total Weekly Earnings</td>
-            <td><input type="text" class="total" id="totalWeeklyEarnings" name="totalWeeklyEarnings" readonly></td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Item#</th>
+                <th>Price</th>
+                <th>Qty Sold</th>
+                <th>Total $</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>$20.99</td>
+                <td><input type="number" step=1 id="item1Qty" name="item1Qty" readonly></td>
+                <td><input type="text" class="total" id="item1Total" name="item1Total" readonly></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>$12.75</td>
+                <td><input type="number" step=1 id="item2Qty" name="item2Qty" readonly></td>
+                <td><input type="text" class="total" id="item2Total" name="item2Total" readonly></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>$9.95</td>
+                <td><input type="number" step=1 id="item3Qty" name="item3Qty" readonly></td>
+                <td><input type="text" class="total" id="item3Total" name="item3Total" readonly></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>$35.89</td>
+                <td><input type="number" step=1 id="item4Qty" name="item4Qty" readonly></td>
+                <td><input type="text" class="total" id="item4Total" name="item4Total" readonly></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Amount Sold</td>
+                <td><input type="text" class="total" id="totalAmountSold" name="totalAmountSold" readonly></td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Weekly Earnings</td>
+                <td><input type="text" class="total" id="totalWeeklyEarnings" name="totalWeeklyEarnings" readonly></td>
+            </tr>
+        </tfoot>
     </table>
 </form>
 
