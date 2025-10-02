@@ -1,0 +1,4 @@
+/* The color of the first row of each table (the heading row) will be different from all the other rows of the table. Then, once you start coding the items of the table, every other row will get a light gray color and a white color (as shown in the example above). */
+th { background-color: maroon; color: white; }
+tbody tr:nth-child(odd) { background-color: lightgrey }
+tbody tr:nth-child(even) { background-color: white; }
