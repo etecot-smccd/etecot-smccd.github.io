@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 5 - Arrays, Part 1: User Survey">
+<title>Homework 5 - Arrays, Part 1: User Survey</title>
+<link rel="stylesheet" href="hw5.css">
+<script src="hw5p1.js" defer></script>
+</head>
+<body>
+
+<!-- Create a web page for part 1 with: -->
+
+<header>
+    <!-- a heading -->
+    <h1>Homework 5 - Arrays, Part 1: User Survey</h1>
+</header>
+
+<!-- a form that will contain:
+an input text box so the user will enter his/her full name
+a group of radio buttons so the user will select his age group (less than 21; between 21 and 50; older than 50)
+a group of checkboxes so the user will select the browsers he/she has used (Firefox, Edge, Chrome, Safari)
+TIP: when building radio buttons and checkboxes in HTML, make sure that the name attribute has the same value to all radio buttons in the group and the same value to all checkboxes in the group but, of course, the id attribute should have a different value for each element
+a select element or datalist (to produce a drop-down list of choices) so the user will select which type of movie he/she prefers (Action, Comedy, Drama, Documentary, Science Fiction)
+a button to submit the form
+a button to clear the form
+a div or paragraph element that will serve as the output/result area (it can be outside the form)
+-->
+<form id="surveyForm">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName">
+    <p>
+        <fieldset>
+            <legend>Age Group:</legend>
+            <input type="radio" id="under21" name="ageGroup" value="Under 21">
+            <label for="under21">Less than 21</label><br>
+            <input type="radio" id="between21and50" name="ageGroup" value="21-50">
+            <label for="between21and50">Between 21 and 50</label><br>
+            <input type="radio" id="over50" name="ageGroup" value="Over 50">
+            <label for="over50">Older than 50</label>
+        </fieldset>
+    </p>
+    <p>
+        <fieldset>
+            <legend>Browsers Used:</legend>
+            <input type="checkbox" id="firefox" name="browsers" value="Firefox">
+            <label for="firefox">Firefox</label><br>
+            <input type="checkbox" id="edge" name="browsers" value="Edge">
+            <label for="edge">Edge</label><br>
+            <input type="checkbox" id="chrome" name="browsers" value="Chrome">
+            <label for="chrome">Chrome</label><br>
+            <input type="checkbox" id="safari" name="browsers" value="Safari">
+            <label for="safari">Safari</label><br>
+            <input type="checkbox" id="opera" name="browsers" value="Opera">
+            <label for="opera">Opera</label><br>
+            <input type="checkbox" id="internet_explorer" name="browsers" value="Internet Explorer">
+            <label for="internet_explorer">Internet Explorer</label><br>
+            <input type="checkbox" id="navigator" name="browsers" value="Navigator">
+            <label for="navigator">Opera</label><br>
+            <input type="checkbox" id="mosaic" name="browsers" value="Mosaic">
+            <label for="other">Mosaic</label><br>
+            <input type="checkbox" id="webtv" name="browsers" value="WebTV">
+            <label for="other">WebTV</label><br>
+            <input type="checkbox" id="cyberdog" name="browsers" value="Cyberdog">
+            <label for="all">Cyberdog</label><br>
+            <input type="checkbox" id="other" name="browsers" value="Other">
+            <label for="other">Other</label><br>
+        </fieldset>
+    </p>
+    <p>
+        <label for="moviePreference">Preferred Movie Type:</label>
+        <select id="moviePreference" name="moviePreference">
+            <option value="" disabled selected>Select your option</option>
+            <option value="Action">Action</option>
+            <option value="Animated">Animated</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Horror">Horror</option>
+            <option value="Romance">Romance</option>
+            <option value="Science Fiction">Science Fiction</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Western">Western</option>
+            <option value="Other">Other</option>
+        </select>
+    </p>
+    <button type="submit" id="btnSubmit">Submit</button>
+    <button type="reset">Clear</button>
+</form>
+<p id="output">
+</p>
+<hr>
+
+<footer>
+    <!-- a hyperlink to go back to the main Homework 5 page -->
+    <nav>
+        <ul>
+            <li><a href="hw5.html">Homework 5 - Arrays</a>
+                <ul>
+                    <li><em>Part 1: User Survey (this page)</em></li>
+                    <li><a href="hw5p2.html">Part 2: July 2024 Census Data</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>

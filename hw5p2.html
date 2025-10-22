@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 5 - Arrays, Part 2: July 2024 Census Data">
+<title>Homework 5 - Arrays, Part 2: July 2024 Census Data</title>
+<link rel="stylesheet" href="hw5.css">
+<script src="hw5p2.js" defer></script>
+</head>
+<body>
+
+<!-- Create a web page for part 2 with: -->
+
+<header>
+    <!-- a heading -->
+    <h1>July 2024 Census Data</h1>
+</header>
+
+<!-- a form with an input text box - the user will use that input box to type:
+either the full name of the state or
+the two-letter abbreviation of the state
+a button to submit the data
+a button to clear the form
+a textarea inside the form or a different element (div or paragraph) where you will write the output/result-->
+<form id="censusForm">
+    <p>
+        <label for="stateInput">Enter State Name or Abbreviation:</label>
+        <input type="text" id="stateInput" name="stateInput" required>
+    </p>
+    <button type="submit" id="btnSubmit">Submit</button>
+    <button type="reset">Clear</button>
+    <p id="output">
+    </p>
+</form>
+
+<footer>
+    <!-- a hyperlink so the user can go back to the main page of Homework 5 -->
+    <nav>
+        <ul>
+            <li><a href="hw5.html">Homework 5 - Arrays</a>
+                <ul>
+                    <li><a href="hw5p1.html">Part 1: User Survey</a></li>
+                    <li><em>Part 2: July 2024 Census Data (this page)</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>

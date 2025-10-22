@@ -1,0 +1,7 @@
+button[type="submit"] {
+    background-color: black;
+    color: white;
+}
+button[type="submit"]:hover {
+    background-color: grey;
+}
