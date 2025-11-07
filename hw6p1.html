@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 6 - Objects, Part 1: Math Functions">
+<title>Homework 6 - Objects, Part 1: Math Functions</title>
+<link rel="stylesheet" href="hw6.css">
+<script src="hw6p1.js" defer></script>
+</head>
+<body>
+
+<!-- create a web page with -->
+
+<header>
+    <!-- a heading that you can choose -->
+    <h1>Homework 6 - Objects, Part 1: Math Functions</h1>
+</header>
+
+<!-- a form that will have:
+an input box for the user to enter a number with 4 decimals
+a button to submit the data
+a button to clear the form
+a textarea (or another element outside the form - div or paragraph) where you will write the output/result
+-->
+<form id="mathForm">
+    <p>
+        <label for="numberInput">Enter a number with at least 4 decimals:</label>
+        <input type="number" id="numberInput" name="numberInput" step="any" required>
+    </p>
+    <button type="submit" id="btnSubmit">Submit</button>
+    <button type="reset">Clear</button>
+</form>
+<textarea id="output" rows="6" cols="75" readonly></textarea>
+
+<footer>
+    <!-- a hyperlink to go back to the main page of Homework 6 -->
+    <nav>
+        <ul>
+            <li><a href="hw6.html">Homework 6 - Objects</a>
+                <ul>
+                    <li><em>Part 1: Math Functions (this page)</em></li>
+                    <li><a href="hw6p2.html">Part 2: Content Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>

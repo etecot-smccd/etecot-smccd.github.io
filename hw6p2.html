@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 6 - Objects, Part 2: Content Search">
+<title>Homework 6 - Objects, Part 2: Content Search</title>
+<link rel="stylesheet" href="hw6.css">
+<script src="hw6p2.js" defer></script>
+</head>
+<body>
+
+<!-- create a web page with: -->
+
+<header>
+    <!-- a heading that you can choose -->
+    <h1>Homework 6 - Objects, Part 2: Content Search</h1>
+</header>
+
+<!-- a form with:
+a textarea to allow the user to type a long content
+an input box to allow the user to type only one letter 
+TIP: in HTML, you can restrict the number of characters the user will type by using the attribute maxlength in the input type="text" element
+an input box or textarea, or an element outside the form (a div or paragraph) to present the output/result
+-->
+<form id="contentForm">
+    <p>
+        <label for="contentInput">Enter Content:</label><br>
+        <textarea id="contentInput" name="contentInput" rows="10" cols="75" required></textarea>
+    </p>
+    <p>
+        <label for="letterInput">Enter a Letter to Search:</label>
+        <input type="text" id="letterInput" name="letterInput" maxlength="1" required>
+    </p>
+    <button type="submit" id="btnSubmit">Submit</button>
+    <button type="reset">Clear</button>
+</form>
+<textarea id="output" rows="2" cols="75" readonly></textarea>
+
+<footer>
+    <!-- a hyperlink to return to the main page of Homework 6 -->
+    <nav>
+        <ul>
+            <li><a href="hw6.html">Homework 6 - Objects</a>
+                <ul>
+                    <li><a href="hw6p1.html">Part 1: Math Functions</a></li>
+                    <li><em>Part 2: Content Search (this page)</em></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>
