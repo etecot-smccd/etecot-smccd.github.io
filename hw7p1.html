@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ed Tecot">
+<meta name="description" content="Homework 7 - Object Model and Cookies, Part 1: Style Chooser">
+<title>Homework 7 - Object Model and Cookies, Part 1: Style Chooser</title>
+<link rel="stylesheet" href="hw7.css">
+<script src="hw7p1.js" defer></script>
+</head>
+<body>
+
+<!-- Create a webpage for part 1 with -->
+
+<header>
+    <!-- a heading of your choice -->
+    <h1>Homework 7 - Object Model and Cookies, Part 1: Style Chooser</h1>
+</header>
+
+<!-- a div, or a main tag with at least 3 paragraphs and that will be the area to be used to apply the styles chosen by the user -->
+<main id="mainContent">
+    <p>'Twas brillig, and the slithy toves</p>
+    <p>Did gyre and gimble in the wabe;</p>
+    <p>All mimsy were the borogoves,</p>
+    <p>And the mome raths outgrabe.</p>
+    <p><cite>- Jaberwocky (Lewis Carroll)</cite></p>
+</main>
+
+<!-- a form with: -->
+<form id="styleForm">
+    <!-- radio buttons for the user to select the color of the background to be applied (you should have at least 2 different colors for the user to choose from) -->
+    <fieldset>
+        <legend>Background Color:</legend>
+        <label><input type="radio" name="backgroundColor" value="cyan">Cyan</label>
+        <label><input type="radio" name="backgroundColor" value="magenta">Magenta</label>
+        <label><input type="radio" name="backgroundColor" value="yellow">Yellow</label>
+    </fieldset>
+    <!-- checkboxes that will allow the user to choose "underline", and/or "bold", and/or "italic" - remember that HTML checkboxes allow the user to choose one or more options -->
+    <fieldset>
+        <legend>Text Styles:</legend>
+        <label><input type="checkbox" name="textDecoration" value="underline">Underline</label>
+        <label><input type="checkbox" name="fontWeight" value="bold">Bold</label>
+        <label><input type="checkbox" name="fontStyle" value="italic">Italic</label>
+    </fieldset>
+    <!-- a select element to create a drop-down list where you will allow the user to select the font-size to be applied (at least 3 different font-size should be listed and preferably in em, or rem, or % units) -->
+    <fieldset>
+        <legend>Font Size:</legend>
+        <select name="fontSize" id="fontSize">
+            <option value="16px">16</option>
+            <option value="24px">24</option>
+            <option value="32px">32</option>
+        </select>
+    </fieldset>
+    <!-- there should be no button to clear the choices, neither a button to submit the information - when the user selects a style, that style will be applied right away -->
+</form>
+
+<footer>
+    <!-- a hyperlink so the user can go back to the page of Homework 7 -->
+    <nav>
+        <ul>
+            <li><a href="hw7.html">Homework 7 - Object Model and Cookies</a>
+                <ul>
+                    <li><em>Part 1: Style Chooser (this page)</em></li>
+                    <li><a href="hw7p2.html">Part 2: Cookies</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+
+</html>
